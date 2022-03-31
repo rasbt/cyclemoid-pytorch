@@ -56,7 +56,7 @@ from cyclemoid_pytorch import cyclemoid
 # ...
 def forward(self, x):
     # ...
-    x = cyclemoid(x) # instead of torch.nn.functional.sigmoid(x)
+    x = cyclemoid(x) # instead of torch.sigmoid(x)
 ```
 
 
