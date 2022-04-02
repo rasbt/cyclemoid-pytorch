@@ -7,7 +7,7 @@
 from .cyclemoid import CycleMoid
 from .cyclemoid import cyclemoid
 
-__version__ = '1.0.0'
+__version__ = "1.1.0"
 
 
-__all__ = ['CycleMoid', 'cyclemoid']
+__all__ = ["CycleMoid", "cyclemoid"]

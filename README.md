@@ -84,3 +84,27 @@ plt.plot(x, y)
 
 
 For a concrete usage, check out the [demo notebook](docs/demo.ipynb).
+
+
+
+
+
+## Appendix
+
+You can now also use the cyclemoid activation in Keras.
+
+```python
+import tensorflow as tf
+from cyclemoid_pytorch.easteregg import CycleMoid
+
+
+tf.keras.utils.get_custom_objects()['cyclemoid'] = CycleMoid
+
+model = tf.keras.Sequential(
+    [
+        tf.keras.Input(...),
+        tf.keras.layers.Conv2D(..., activation="cyclemoid"),
+        # ... 
+    ]
+)
+```
